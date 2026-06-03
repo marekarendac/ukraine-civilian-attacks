@@ -17,453 +17,176 @@
   --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
   --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
   --text-hero: clamp(2.5rem, 1rem + 5vw, 5rem);
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
-  --radius-sm: 0.25rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 0.5rem;
-  --radius-full: 9999px;
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+  --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+  --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+  --radius-sm: 0.25rem; --radius-md: 0.375rem; --radius-lg: 0.5rem; --radius-full: 9999px;
   --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
   --font-display: 'DM Serif Display', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
-  --content-narrow: 640px;
-  --content-default: 1000px;
-  --content-wide: 1280px;
+  --content-narrow: 640px; --content-default: 1000px; --content-wide: 1320px;
 }
 
 [data-theme="dark"] {
-  --color-bg: #0a0908;
-  --color-surface: #0f0e0c;
-  --color-surface-2: #141210;
-  --color-surface-3: #1a1816;
-  --color-surface-4: #201e1b;
-  --color-border: rgba(255,255,255,0.07);
-  --color-divider: rgba(255,255,255,0.05);
-  --color-text: #d8d4ce;
-  --color-text-muted: #7a756e;
-  --color-text-faint: #4a4640;
+  --color-bg: #0a0908; --color-surface: #0f0e0c; --color-surface-2: #141210;
+  --color-surface-3: #1a1816; --color-surface-4: #201e1b;
+  --color-border: rgba(255,255,255,0.07); --color-divider: rgba(255,255,255,0.05);
+  --color-text: #d8d4ce; --color-text-muted: #7a756e; --color-text-faint: #4a4640;
   --color-text-inverse: #0a0908;
-  --color-red: #c0392b;
-  --color-red-bright: #e74c3c;
-  --color-red-dim: #7a2020;
-  --color-red-highlight: rgba(192,57,43,0.12);
-  --color-red-glow: rgba(192,57,43,0.06);
-  --color-amber: #c0892b;
-  --color-amber-highlight: rgba(192,137,43,0.12);
-  --color-green: #27ae60;
-  --color-green-highlight: rgba(39,174,96,0.1);
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.5);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,0.7);
-  --shadow-red: 0 0 40px rgba(192,57,43,0.08);
+  --color-red: #c0392b; --color-red-bright: #e74c3c; --color-red-dim: #7a2020;
+  --color-red-highlight: rgba(192,57,43,0.12); --color-red-glow: rgba(192,57,43,0.06);
+  --color-amber: #d4960a; --color-amber-highlight: rgba(212,150,10,0.15);
+  --color-green: #27ae60; --color-green-highlight: rgba(39,174,96,0.12);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4); --shadow-md: 0 4px 16px rgba(0,0,0,0.5);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.7); --shadow-red: 0 0 40px rgba(192,57,43,0.08);
 }
 
 [data-theme="light"] {
-  --color-bg: #f5f3ef;
-  --color-surface: #faf9f6;
-  --color-surface-2: #ffffff;
-  --color-surface-3: #f0ede8;
-  --color-surface-4: #e8e4de;
-  --color-border: rgba(0,0,0,0.1);
-  --color-divider: rgba(0,0,0,0.06);
-  --color-text: #1a1714;
-  --color-text-muted: #6b6560;
-  --color-text-faint: #a8a29c;
+  --color-bg: #f5f3ef; --color-surface: #faf9f6; --color-surface-2: #ffffff;
+  --color-surface-3: #f0ede8; --color-surface-4: #e8e4de;
+  --color-border: rgba(0,0,0,0.1); --color-divider: rgba(0,0,0,0.06);
+  --color-text: #1a1714; --color-text-muted: #6b6560; --color-text-faint: #a8a29c;
   --color-text-inverse: #faf9f6;
-  --color-red: #c0392b;
-  --color-red-bright: #e74c3c;
-  --color-red-dim: #e8b4b0;
-  --color-red-highlight: rgba(192,57,43,0.08);
-  --color-red-glow: rgba(192,57,43,0.03);
-  --color-amber: #b07b20;
-  --color-amber-highlight: rgba(176,123,32,0.1);
-  --color-green: #1e8449;
-  --color-green-highlight: rgba(30,132,73,0.08);
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,0.15);
-  --shadow-red: none;
+  --color-red: #b02d20; --color-red-bright: #c0392b; --color-red-dim: #e8b4b0;
+  --color-red-highlight: rgba(192,57,43,0.08); --color-red-glow: rgba(192,57,43,0.03);
+  --color-amber: #a06800; --color-amber-highlight: rgba(160,104,0,0.1);
+  --color-green: #1e8449; --color-green-highlight: rgba(30,132,73,0.08);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08); --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.15); --shadow-red: none;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-body {
-  min-height: 100dvh;
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  line-height: 1.6;
-}
+body { min-height: 100dvh; font-family: var(--font-body); font-size: var(--text-base); color: var(--color-text); background-color: var(--color-bg); line-height: 1.6; }
 img { display: block; max-width: 100%; }
 button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
 a { color: inherit; }
 p, li { text-wrap: pretty; }
 h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
-
 ::selection { background: rgba(192,57,43,0.3); color: var(--color-text); }
 :focus-visible { outline: 2px solid var(--color-red); outline-offset: 3px; border-radius: var(--radius-sm); }
 
 /* ── HEADER ── */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-.header-inner {
-  max-width: var(--content-wide);
-  margin-inline: auto;
-  padding: var(--space-4) var(--space-6);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  text-decoration: none;
-}
-.logo-mark {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-}
-.logo-text {
-  font-size: var(--text-sm);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--color-text);
-  line-height: 1.2;
-}
-.logo-sub {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  font-weight: 400;
-}
+.site-header { position: sticky; top: 0; z-index: 100; background: var(--color-bg); border-bottom: 1px solid var(--color-border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.header-inner { max-width: var(--content-wide); margin-inline: auto; padding: var(--space-4) var(--space-6); display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+.logo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; }
+.logo-mark { width: 32px; height: 32px; flex-shrink: 0; }
+.logo-text { font-size: var(--text-sm); font-weight: 600; letter-spacing: -0.01em; color: var(--color-text); line-height: 1.2; }
+.logo-sub { font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 400; }
 .header-actions { display: flex; align-items: center; gap: var(--space-3); }
-.live-counter {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  border: 1px solid var(--color-border);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
-  white-space: nowrap;
-}
+.live-counter { font-size: var(--text-xs); color: var(--color-text-muted); border: 1px solid var(--color-border); padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); white-space: nowrap; }
 .live-counter strong { color: var(--color-red-bright); }
-.theme-toggle {
-  width: 36px; height: 36px;
-  display: flex; align-items: center; justify-content: center;
-  border-radius: var(--radius-md);
-  color: var(--color-text-muted);
-  transition: color var(--transition), background var(--transition);
-}
+.theme-toggle { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); color: var(--color-text-muted); transition: color var(--transition), background var(--transition); }
 .theme-toggle:hover { color: var(--color-text); background: var(--color-surface-3); }
 
 /* ── HERO ── */
-.hero {
-  max-width: var(--content-wide);
-  margin-inline: auto;
-  padding: clamp(var(--space-12), 8vw, var(--space-20)) var(--space-6) var(--space-12);
-  position: relative;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-red-dim), transparent);
-}
-.hero-eyebrow {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-red);
-  margin-bottom: var(--space-4);
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-.pulse-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--color-red-bright);
-  animation: pulse 2s ease-in-out infinite;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.7); }
-}
-.hero-title {
-  font-family: var(--font-display);
-  font-size: var(--text-hero);
-  font-weight: 400;
-  color: var(--color-text);
-  max-width: 14ch;
-  margin-bottom: var(--space-6);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-.hero-title em {
-  font-style: normal;
-  color: var(--color-red);
-}
-.hero-desc {
-  font-size: var(--text-base);
-  color: var(--color-text-muted);
-  max-width: 60ch;
-  margin-bottom: var(--space-10);
-  line-height: 1.7;
-}
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: var(--space-4);
-  max-width: 800px;
-  margin-bottom: var(--space-8);
-}
-.stat-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-5) var(--space-6);
-  position: relative;
-  overflow: hidden;
-}
-.stat-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--color-red);
-  opacity: 0.6;
-}
+.hero { max-width: var(--content-wide); margin-inline: auto; padding: clamp(var(--space-12), 8vw, var(--space-20)) var(--space-6) var(--space-12); position: relative; }
+.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--color-red-dim), transparent); }
+.hero-eyebrow { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-red); margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-2); }
+.pulse-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-red-bright); animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+.hero-title { font-family: var(--font-display); font-size: var(--text-hero); font-weight: 400; color: var(--color-text); max-width: 14ch; margin-bottom: var(--space-6); line-height: 1.05; letter-spacing: -0.02em; }
+.hero-title em { font-style: normal; color: var(--color-red); }
+.hero-desc { font-size: var(--text-base); color: var(--color-text-muted); max-width: 60ch; margin-bottom: var(--space-10); line-height: 1.7; }
+.hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4); max-width: 800px; margin-bottom: var(--space-8); }
+.stat-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-5) var(--space-6); position: relative; overflow: hidden; }
+.stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--color-red); opacity: 0.6; }
 .stat-card.amber::before { background: var(--color-amber); }
 .stat-card.green::before { background: var(--color-green); }
-.stat-number {
-  font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: 400;
-  color: var(--color-text);
-  letter-spacing: -0.02em;
-  line-height: 1;
-  margin-bottom: var(--space-1);
-}
+.stat-number { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 400; color: var(--color-text); letter-spacing: -0.02em; line-height: 1; margin-bottom: var(--space-1); }
 .stat-card.red .stat-number { color: var(--color-red-bright); }
 .stat-card.amber .stat-number { color: var(--color-amber); }
-.stat-label {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  letter-spacing: 0.04em;
-}
-.hero-source-note {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  border-left: 2px solid var(--color-border);
-  padding-left: var(--space-3);
-  max-width: 55ch;
-  line-height: 1.6;
-}
+.stat-label { font-size: var(--text-xs); color: var(--color-text-muted); letter-spacing: 0.04em; }
+.hero-source-note { font-size: var(--text-xs); color: var(--color-text-faint); border-left: 2px solid var(--color-border); padding-left: var(--space-3); max-width: 55ch; line-height: 1.6; }
 .hero-source-note a { color: var(--color-text-muted); text-decoration: underline; text-underline-offset: 3px; }
 .hero-source-note a:hover { color: var(--color-text); }
 
-/* ── CONTROLS ── */
-.controls-bar {
-  max-width: var(--content-wide);
-  margin-inline: auto;
-  padding: var(--space-6) var(--space-6) var(--space-4);
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  flex-wrap: wrap;
-  border-top: 1px solid var(--color-divider);
-}
-.filter-label {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-right: var(--space-1);
-}
-.filter-btn {
-  font-size: var(--text-xs);
-  font-weight: 500;
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
-  border: 1px solid var(--color-border);
-  color: var(--color-text-muted);
-  transition: all var(--transition);
-  white-space: nowrap;
-}
-.filter-btn:hover { border-color: var(--color-red-dim); color: var(--color-text); }
-.filter-btn.active {
-  background: var(--color-red);
-  border-color: var(--color-red);
-  color: #fff;
-}
-.result-count {
-  margin-left: auto;
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-}
+/* ── LEGEND ── */
+.legend-bar { max-width: var(--content-wide); margin-inline: auto; padding: var(--space-3) var(--space-6) 0; display: flex; align-items: center; gap: var(--space-5); flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-xs); color: var(--color-text-muted); }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+.legend-dot.green { background: var(--color-green); }
+.legend-dot.amber { background: var(--color-amber); }
+.legend-label { font-size: var(--text-xs); }
 
-/* ── ATTACKS GRID ── */
-.attacks-section {
-  max-width: var(--content-wide);
-  margin-inline: auto;
-  padding: var(--space-4) var(--space-6) var(--space-20);
-}
-.attacks-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
-  gap: var(--space-4);
-}
-.attack-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
-  position: relative;
-}
-.attack-card:hover {
-  border-color: rgba(192,57,43,0.3);
-  box-shadow: var(--shadow-md), var(--shadow-red);
-  transform: translateY(-1px);
-}
-.card-severity-bar {
-  height: 3px;
-  background: var(--color-red-dim);
-}
+/* ── CONTROLS ── */
+.controls-bar { max-width: var(--content-wide); margin-inline: auto; padding: var(--space-5) var(--space-6) var(--space-4); display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; border-top: 1px solid var(--color-divider); }
+.filter-label { font-size: var(--text-xs); color: var(--color-text-faint); text-transform: uppercase; letter-spacing: 0.08em; margin-right: var(--space-1); }
+.filter-btn { font-size: var(--text-xs); font-weight: 500; padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); border: 1px solid var(--color-border); color: var(--color-text-muted); transition: all var(--transition); white-space: nowrap; }
+.filter-btn:hover { border-color: var(--color-red-dim); color: var(--color-text); }
+.filter-btn.active { background: var(--color-red); border-color: var(--color-red); color: #fff; }
+.result-count { margin-left: auto; font-size: var(--text-xs); color: var(--color-text-faint); }
+
+/* ── ATTACKS GRID — denser ── */
+.attacks-section { max-width: var(--content-wide); margin-inline: auto; padding: var(--space-4) var(--space-6) var(--space-20); }
+.attacks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: var(--space-3); }
+.attack-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition); position: relative; }
+.attack-card:hover { border-color: rgba(192,57,43,0.3); box-shadow: var(--shadow-md), var(--shadow-red); transform: translateY(-1px); }
+.card-severity-bar { height: 3px; background: var(--color-red-dim); }
 .card-severity-bar.high { background: var(--color-red-bright); }
 .card-severity-bar.extreme { background: var(--color-red-bright); box-shadow: 0 0 8px rgba(231,76,60,0.5); }
-.card-body { padding: var(--space-5) var(--space-5) var(--space-4); }
-.card-meta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  margin-bottom: var(--space-3);
-  flex-wrap: wrap;
-}
-.card-date {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  letter-spacing: 0.04em;
-  font-feature-settings: "tnum";
-}
-.card-location {
-  font-size: var(--text-xs);
-  font-weight: 600;
-  color: var(--color-red);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
+.card-body { padding: var(--space-4) var(--space-4) var(--space-3); }
+.card-meta { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3); flex-wrap: wrap; }
+.card-date { font-size: var(--text-xs); color: var(--color-text-faint); letter-spacing: 0.04em; font-feature-settings: "tnum"; }
+.card-location { font-size: var(--text-xs); font-weight: 600; color: var(--color-red); letter-spacing: 0.04em; text-transform: uppercase; }
 .card-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--color-text-faint); flex-shrink: 0; }
-.card-title {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 400;
-  color: var(--color-text);
-  margin-bottom: var(--space-3);
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-}
-.card-desc {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  line-height: 1.65;
-  margin-bottom: var(--space-4);
-}
-.card-casualties {
-  display: flex;
-  gap: var(--space-4);
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-surface-2);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  margin-bottom: var(--space-4);
-}
+.card-title { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 400; color: var(--color-text); margin-bottom: var(--space-2); line-height: 1.3; letter-spacing: -0.01em; }
+.card-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; margin-bottom: var(--space-3); }
+.card-casualties { display: flex; gap: var(--space-4); padding: var(--space-3) var(--space-4); background: var(--color-surface-2); border-radius: var(--radius-md); border: 1px solid var(--color-border); margin-bottom: var(--space-3); }
 .casualty-item { display: flex; flex-direction: column; gap: 2px; }
-.casualty-number {
-  font-size: var(--text-base);
-  font-weight: 600;
-  font-feature-settings: "tnum";
-  letter-spacing: -0.02em;
-  color: var(--color-text);
-}
+.casualty-number { font-size: var(--text-base); font-weight: 600; font-feature-settings: "tnum"; letter-spacing: -0.02em; color: var(--color-text); }
 .casualty-number.killed { color: var(--color-red-bright); }
 .casualty-number.injured { color: var(--color-amber); }
 .casualty-label { font-size: var(--text-xs); color: var(--color-text-faint); }
-.card-footer {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  flex-wrap: wrap;
-}
+.card-footer { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+
+/* ── VERIFICATION BADGES ── */
 .verify-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-1);
-  font-size: var(--text-xs);
-  font-weight: 500;
-  padding: 2px var(--space-2);
-  border-radius: var(--radius-full);
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: var(--text-xs); font-weight: 600;
+  padding: 3px var(--space-2); border-radius: var(--radius-full);
+  line-height: 1;
 }
+/* ✅ Zelený — plne overené */
 .verify-badge.confirmed {
   background: var(--color-green-highlight);
   color: var(--color-green);
-  border: 1px solid rgba(39,174,96,0.2);
+  border: 1px solid rgba(39,174,96,0.25);
 }
+.verify-badge.confirmed::before {
+  content: '';
+  display: inline-block; width: 7px; height: 7px;
+  border-radius: 50%; background: var(--color-green);
+  flex-shrink: 0;
+}
+/* ⚠️ Žltý — čísla sa menili / odhad */
 .verify-badge.partial {
   background: var(--color-amber-highlight);
   color: var(--color-amber);
-  border: 1px solid rgba(192,137,43,0.2);
+  border: 1px solid rgba(212,150,10,0.3);
 }
-.source-link {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  transition: color var(--transition);
-  padding: 2px var(--space-2);
-  border-radius: var(--radius-sm);
-  border: 1px solid transparent;
+.verify-badge.partial::before {
+  content: '⚠';
+  font-size: 10px; line-height: 1; flex-shrink: 0;
 }
-.source-link:hover {
-  color: var(--color-text-muted);
-  border-color: var(--color-border);
+/* 🔴 Slabšie potvrdené */
+.verify-badge.weak {
+  background: rgba(192,57,43,0.1);
+  color: var(--color-red);
+  border: 1px solid rgba(192,57,43,0.25);
 }
+.verify-badge.weak::before {
+  content: '⚠';
+  font-size: 10px; line-height: 1; flex-shrink: 0;
+}
+
+.source-link { font-size: var(--text-xs); color: var(--color-text-faint); text-decoration: none; display: inline-flex; align-items: center; gap: 3px; transition: color var(--transition); padding: 2px var(--space-2); border-radius: var(--radius-sm); border: 1px solid transparent; }
+.source-link:hover { color: var(--color-text-muted); border-color: var(--color-border); }
 .source-links { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-2); }
 
 /* ── FOOTER ── */
-.site-footer {
-  border-top: 1px solid var(--color-divider);
-  padding: var(--space-12) var(--space-6);
-  max-width: var(--content-wide);
-  margin-inline: auto;
-}
-.footer-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-8);
-}
+.site-footer { border-top: 1px solid var(--color-divider); padding: var(--space-12) var(--space-6); max-width: var(--content-wide); margin-inline: auto; }
+.footer-inner { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); }
 .footer-note { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; max-width: 48ch; }
 .footer-note a { color: var(--color-text-muted); text-decoration: underline; text-underline-offset: 3px; }
 .footer-sources h4 { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-faint); margin-bottom: var(--space-3); font-weight: 600; }
@@ -472,10 +195,8 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
 .footer-sources li a:hover { color: var(--color-text); }
 .footer-copy { margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--color-divider); font-size: var(--text-xs); color: var(--color-text-faint); }
 
-/* ── HIDDEN ── */
 .attack-card.hidden { display: none; }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 640px) {
   .header-inner { padding: var(--space-3) var(--space-4); }
   .hero { padding: var(--space-10) var(--space-4) var(--space-8); }
@@ -484,9 +205,8 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .live-counter { display: none; }
   .footer-inner { grid-template-columns: 1fr; }
+  .attacks-grid { grid-template-columns: 1fr; }
 }
-
-/* ── SCROLLBAR ── */
 [data-theme="dark"] ::-webkit-scrollbar { width: 6px; }
 [data-theme="dark"] ::-webkit-scrollbar-track { background: var(--color-bg); }
 [data-theme="dark"] ::-webkit-scrollbar-thumb { background: var(--color-surface-4); border-radius: 3px; }
@@ -494,7 +214,6 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <a href="#" class="logo" aria-label="Domov">
@@ -510,43 +229,23 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
       </div>
     </a>
     <div class="header-actions">
-      <div class="live-counter">Celkom záznamov: <strong id="total-count">0</strong></div>
-      <button class="theme-toggle" data-theme-toggle aria-label="Prepnuť tému">
+      <div class="live-counter">Záznamy: <strong id="total-count">0</strong></div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Prepnúť tému">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </div>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">
-    <span class="pulse-dot"></span>
-    Dokumentácia od 24. februára 2022
-  </div>
+  <div class="hero-eyebrow"><span class="pulse-dot"></span>Dokumentácia od 24. februára 2022</div>
   <h1 class="hero-title">Útoky na <em>civilistov</em> Ukrajiny</h1>
-  <p class="hero-desc">
-    Overená databáza ruských útokov namierených na civilné obyvateľstvo Ukrajiny.
-    Každý záznam vychádza z potvrdeného reportovania OSN (OHCHR/HRMMU), BBC, Reuters, AP alebo iných overených médií.
-    Skutočné čísla obetí sú pravdepodobne vyššie — mnohé obete zostávajú nezdokumentované.
-  </p>
+  <p class="hero-desc">Overená databáza ruských útokov namierených na civilné obyvateľstvo Ukrajiny. Každý záznam vychádza z potvrdeného reportovania OSN (OHCHR/HRMMU), BBC, Reuters, AP alebo iných overených médií. Skutočné čísla obetí sú pravdepodobne vyššie — mnohé obete zostávajú nezdokumentované.</p>
   <div class="hero-stats">
-    <div class="stat-card red">
-      <div class="stat-number">15 172+</div>
-      <div class="stat-label">Overených zabitých civilistov (od feb. 2022)</div>
-    </div>
-    <div class="stat-card amber">
-      <div class="stat-number">41 378+</div>
-      <div class="stat-label">Overených zranených civilistov</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">766+</div>
-      <div class="stat-label">Zabitých detí (overené)</div>
-    </div>
-    <div class="stat-card green">
-      <div class="stat-number" id="total-events-hero">—</div>
-      <div class="stat-label">Dokumentovaných udalostí v tejto databáze</div>
-    </div>
+    <div class="stat-card red"><div class="stat-number">15 172+</div><div class="stat-label">Overených zabitých civilistov (od feb. 2022)</div></div>
+    <div class="stat-card amber"><div class="stat-number">41 378+</div><div class="stat-label">Overených zranených civilistov</div></div>
+    <div class="stat-card"><div class="stat-number">766+</div><div class="stat-label">Zabitých detí (overené)</div></div>
+    <div class="stat-card green"><div class="stat-number" id="total-events-hero">—</div><div class="stat-label">Dokumentovaných udalostí v tejto databáze</div></div>
   </div>
   <p class="hero-source-note">
     Celkové čísla podľa <a href="https://reliefweb.int/report/ukraine/four-years-full-scale-invasion-ukraine-key-facts-and-findings-february-2026" target="_blank" rel="noopener">ReliefWeb / OHCHR, február 2026</a>.
@@ -555,7 +254,13 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
   </p>
 </section>
 
-<!-- CONTROLS -->
+<!-- LEGEND -->
+<div class="legend-bar">
+  <span style="font-size:var(--text-xs);color:var(--color-text-faint);text-transform:uppercase;letter-spacing:0.08em;">Stav overenia:</span>
+  <span class="legend-item"><span class="legend-dot green"></span><span class="legend-label">Overené — potvrdené OSN / BBC / Reuters / AP</span></span>
+  <span class="legend-item"><span class="legend-dot amber"></span><span class="legend-label">⚠ Čísla sa menili alebo nie sú presne potvrdené</span></span>
+</div>
+
 <div class="controls-bar">
   <span class="filter-label">Rok</span>
   <button class="filter-btn active" data-year="all">Všetky</button>
@@ -567,7 +272,6 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
   <span class="result-count" id="result-count"></span>
 </div>
 
-<!-- ATTACKS -->
 <main class="attacks-section">
   <div class="attacks-grid" id="attacks-grid">
 
@@ -576,20 +280,14 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2022">
       <div class="card-severity-bar extreme"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">Feb — Mar 2022</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Mariupol</span>
-        </div>
+        <div class="card-meta"><span class="card-date">Feb — Mar 2022</span><span class="card-dot"></span><span class="card-location">Mariupol</span></div>
         <h2 class="card-title">Obliehanie a zničenie Mariupolu</h2>
         <p class="card-desc">Ruské sily obkľúčili a systematicky bombardovali Mariupol počas 86 dní. Civilné oblasti, nemocnice, divadlo (kde sa skrývali stovky civilistov) a bytové domy boli zrovnané so zemou. Iniciatíva Mariupol Justice overila 12 500 jedinečných prípadov civilných obetí.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">12 500+</span><span class="casualty-label">overených zabitých</span></div>
           <div class="casualty-item"><span class="casualty-number injured">~25 000+</span><span class="casualty-label">zranených / nezvestných</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.ukrinform.net/rubric-ato/4108169-boychenko-mariupol-justice-initiative-records-12500-civilian-deaths-in-mariupol.html" target="_blank" rel="noopener">↗ Ukrinform</a>
           <a class="source-link" href="https://www.bbc.com/news/world-europe-61629264" target="_blank" rel="noopener">↗ BBC</a>
@@ -601,20 +299,14 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2022">
       <div class="card-severity-bar extreme"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">27. Feb — 30. Mar 2022</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Bucha, Kyjevský kraj</span>
-        </div>
+        <div class="card-meta"><span class="card-date">27. Feb — 30. Mar 2022</span><span class="card-dot"></span><span class="card-location">Bucha, Kyjevský kraj</span></div>
         <h2 class="card-title">Masaker v Buche</h2>
         <p class="card-desc">Po stiahnutí ruských vojsk z Buche boli nájdené telá stoviek civilistov — mnohí s viazanými rukami, stopami po mučení a popravách. Ukrajinskí prokurátori zdokumentovali 458 zabitých civilistov priamo v meste. Medzinárodný trestný súd vydal zatykač.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">458</span><span class="casualty-label">zdokumentovaných zabitých</span></div>
           <div class="casualty-item"><span class="casualty-number injured">stovky</span><span class="casualty-label">mučených / pohlavne napadnutých</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OSN + ICC</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OSN + ICC</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.bbc.com/news/world-europe-61006773" target="_blank" rel="noopener">↗ BBC</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/ukraine-says-more-400-bodies-found-kyiv-region-after-russian-troops-leave-2022-04-12/" target="_blank" rel="noopener">↗ Reuters</a>
@@ -626,20 +318,14 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2022">
       <div class="card-severity-bar extreme"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">16. Mar 2022</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Mariupol</span>
-        </div>
+        <div class="card-meta"><span class="card-date">16. Mar 2022</span><span class="card-dot"></span><span class="card-location">Mariupol</span></div>
         <h2 class="card-title">Bombardovanie Divadla v Mariupole</h2>
-        <p class="card-desc">Ruské letectvo zbombardovalo Mariupolské divadlo, kde sa ukrývalo odhadom 1 000 — 1 200 civilistov, prevažne ženy, deti a starci. Slovo "DETI" (deti) bolo veľkými písmenami napísané pred divadlom ako varovanie. Počet obetí bol OHCHR odhadnutý na 300+.</p>
+        <p class="card-desc">Ruské letectvo zbombardovalo Mariupolské divadlo, kde sa ukrývalo odhadom 1 000–1 200 civilistov, prevažne ženy, deti a starci. Slovo „DETI" bolo veľkými písmenami napísané pred divadlom ako varovanie. Počet obetí bol OHCHR odhadnutý na 300+.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">300+</span><span class="casualty-label">odhadovaných zabitých</span></div>
           <div class="casualty-item"><span class="casualty-number injured">stovky</span><span class="casualty-label">pod troskami</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge partial">⚠ Čiastočne overené (prístup obmedzený)</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge partial">Čiastočne overené — prístup obmedzený</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.bbc.com/news/world-europe-60938538" target="_blank" rel="noopener">↗ BBC</a>
           <a class="source-link" href="https://apnews.com/article/russia-ukraine-war-mariupol-theater-strike-b4d3b75a3e5cc0b1fef4eadfd7d5a91c" target="_blank" rel="noopener">↗ AP News</a>
@@ -651,20 +337,14 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2022">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">9. Mar 2022</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Mariupol</span>
-        </div>
+        <div class="card-meta"><span class="card-date">9. Mar 2022</span><span class="card-dot"></span><span class="card-location">Mariupol</span></div>
         <h2 class="card-title">Bombardovanie Pôrodnice č. 3</h2>
         <p class="card-desc">Ruské letectvo zaútočilo na fungujúcu pôrodnicu a detskú nemocnicu v Mariupole. Budova bola kompletne zničená. Medzi obeťami boli novorodenci a tehotné ženy. Rusko tvrdilo, že budova slúžila vojenskej sile — tvrdenie odmietnuté OSN a medzinárodnými pozorovateľmi.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">3</span><span class="casualty-label">zabitých (potvrdených)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">17</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené AP + OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené AP + OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://apnews.com/article/russia-ukraine-war-maternity-hospital-mariupol-bbc1f6c406f1b1e226c57ab72ea1e0ef" target="_blank" rel="noopener">↗ AP News</a>
           <a class="source-link" href="https://www.bbc.com/news/world-europe-60676915" target="_blank" rel="noopener">↗ BBC</a>
@@ -675,24 +355,17 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2022">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">8. Apr 2022</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Kramatorsk</span>
-        </div>
+        <div class="card-meta"><span class="card-date">8. Apr 2022</span><span class="card-dot"></span><span class="card-location">Kramatorsk</span></div>
         <h2 class="card-title">Útok na vlakové nádražie v Kramatorsku</h2>
-        <p class="card-desc">Ruská raketa Tochka-U s kazetovou muníciou zasiahla preplnené vlakové nádražie v Kramatorsku, kde čakali tisícky civilistov na evakuáciu. Útok bol vykonaný v čase, keď bolo nádražie verejne oznámené ako evakuačný bod. Na rakete bol nájdený nápis "Za deti".</p>
+        <p class="card-desc">Ruská raketa Tochka-U s kazetovou muníciou zasiahla preplnené vlakové nádražie v Kramatorsku, kde čakali tisícky civilistov na evakuáciu. Útok bol vykonaný v čase, keď bolo nádražie verejne oznámené ako evakuačný bod. Na rakete bol nájdený nápis „Za deti".</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">59</span><span class="casualty-label">zabitých (potvrdených OSN)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">109</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR + OSN</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR + OSN</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.bbc.com/news/world-europe-61039606" target="_blank" rel="noopener">↗ BBC</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/least-52-killed-railway-station-attack-eastern-ukraine-2022-04-08/" target="_blank" rel="noopener">↗ Reuters</a>
-          <a class="source-link" href="https://ukraine.ohchr.org" target="_blank" rel="noopener">↗ OHCHR</a>
         </div>
       </div>
     </article>
@@ -700,24 +373,18 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2022">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">14. Jul 2022</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Vinnycia</span>
-        </div>
+        <div class="card-meta"><span class="card-date">14. Jul 2022</span><span class="card-dot"></span><span class="card-location">Vinnycia</span></div>
         <h2 class="card-title">Raketový útok na centrum Vinnyce</h2>
-        <p class="card-desc">Tri ruské rakety Kalibr zasiahli centrum mesta Vinnycia — námestie, obchodné centrum a okolité ulice. Medzi obeťami bola štvorročná dievčatko Liza Dmytrievová, trpiaca Downovým syndrómom, ktorej fotografia v detskom kočiari sa stala symbolom civilných obetí vojny.</p>
+        <p class="card-desc">Tri ruské rakety Kalibr zasiahli centrum mesta Vinnycia — námestie, obchodné centrum a okolité ulice. Medzi obeťami bola štvorročná Liza Dmytrievová s Downovým syndrómom, ktorej fotografia v detskom kočiari sa stala symbolom civilných obetí vojny.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">27</span><span class="casualty-label">zabitých (potvrdených)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">235</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené BBC + Reuters</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené BBC + Reuters</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.bbc.com/news/world-europe-62155657" target="_blank" rel="noopener">↗ BBC</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/rockets-hit-central-ukraine-city-vinnytsia-kyiv-2022-07-14/" target="_blank" rel="noopener">↗ Reuters</a>
-          <a class="source-link" href="https://www.theguardian.com/world/2022/jul/14/ukraine-missile-attack-vinnytsia-shopping-area" target="_blank" rel="noopener">↗ The Guardian</a>
+          <a class="source-link" href="https://www.theguardian.com/world/2022/jul/14/ukraine-missile-attack-vinnytsia-shopping-area" target="_blank" rel="noopener">↗ Guardian</a>
         </div>
       </div>
     </article>
@@ -725,24 +392,17 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2022">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">9. Sep 2022</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Zaporizhzhia</span>
-        </div>
+        <div class="card-meta"><span class="card-date">9. Sep 2022</span><span class="card-dot"></span><span class="card-location">Zaporizhzhia</span></div>
         <h2 class="card-title">Útok na civilný konvoj pri Zaporizhzhii</h2>
-        <p class="card-desc">Ruské rakety zasiahli kolónu civilných vozidiel čakajúcich na evakuáciu pri Zaporizhzhii. Mnohé vozidlá boli označené bielymi vlajkami. Útok sa odohral v oblasti, kde nie sú vojenské ciele. Incident zdokumentoval OHCHR aj Human Rights Watch.</p>
+        <p class="card-desc">Ruské rakety zasiahli kolónu civilných vozidiel čakajúcich na evakuáciu pri Zaporizhzhii. Mnohé vozidlá boli označené bielymi vlajkami. Útok sa odohral v oblasti bez vojenských cieľov. Incident zdokumentoval OHCHR aj Human Rights Watch.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">30</span><span class="casualty-label">zabitých (potvrdených)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">88</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené HRW + OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené HRW + OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.hrw.org/news/2022/09/30/ukraine-russian-forces-killed-civilians-fleeing-zaporizhzhia" target="_blank" rel="noopener">↗ HRW</a>
           <a class="source-link" href="https://www.bbc.com/news/world-europe-63065580" target="_blank" rel="noopener">↗ BBC</a>
-          <a class="source-link" href="https://www.reuters.com/world/europe/russian-strikes-kill-civilians-convoy-near-zaporizhzhia-ukraine-2022-09-30/" target="_blank" rel="noopener">↗ Reuters</a>
         </div>
       </div>
     </article>
@@ -752,24 +412,17 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2023">
       <div class="card-severity-bar extreme"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">14. Jan 2023</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Dnipro</span>
-        </div>
+        <div class="card-meta"><span class="card-date">14. Jan 2023</span><span class="card-dot"></span><span class="card-location">Dnipro</span></div>
         <h2 class="card-title">Zásah obytného domu v Dnipre</h2>
         <p class="card-desc">Ruská riadená raketa Kh-22 zasiahla 9-poschodový obytný dom v Dnipre, pričom zničila rozsiahlu časť budovy. Záchranári pracovali niekoľko dní. Šesť zabitých boli deti. Ide o jeden z najväčších jednotlivých útokov na civilnú budovu počas vojny.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">45</span><span class="casualty-label">zabitých (finálny počet)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">80+</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OSN + Le Monde</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OSN + Le Monde</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.lemonde.fr/en/international/article/2023/01/17/final-death-toll-of-russian-strike-on-dnipro-reaches-44_6011914_4.html" target="_blank" rel="noopener">↗ Le Monde</a>
           <a class="source-link" href="https://www.npr.org/2023/01/15/1149329917/dnipro-ukraine-apartment-russian-attack" target="_blank" rel="noopener">↗ NPR</a>
-          <a class="source-link" href="https://www.pbs.org/newshour/world/russian-missile-strike-kills-40-in-dnipro-kremlin-seen-preparing-for-long-war" target="_blank" rel="noopener">↗ PBS</a>
         </div>
       </div>
     </article>
@@ -777,24 +430,17 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2023">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">27. Jun 2023</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Kramatorsk</span>
-        </div>
+        <div class="card-meta"><span class="card-date">27. Jun 2023</span><span class="card-dot"></span><span class="card-location">Kramatorsk</span></div>
         <h2 class="card-title">Útok na pizzeriu Ria v Kramatorsku</h2>
-        <p class="card-desc">Ruská raketa zasiahla preplnenú pizzeriu Ria v centre Kramatorsku. Medzi obeťami bola ukrajinskí novinárka a spisovateľka Victoria Amelina, 17-ročné dievča a 14-ročné dvojičky. Reštaurácia bola obľúbeným miestom novinárov a civilistov. Útok bol cielený v čase najväčšej návštevnosti.</p>
+        <p class="card-desc">Ruská raketa zasiahla preplnenú pizzeriu Ria v centre Kramatorsku. Medzi obeťami bola novinárka Victoria Amelina, 17-ročné dievča a 14-ročné dvojičky. Reštaurácia bola obľúbeným miestom novinárov a civilistov. Útok bol cielený v čase najväčšej návštevnosti.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">13</span><span class="casualty-label">zabitých (finálne)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">61</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené AP + Reuters + Wikipedia</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené AP + Reuters</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.aljazeera.com/news/2023/6/27/russia-bombs-busy-ukraine-restaurant-as-wagner-moves-to-belarus" target="_blank" rel="noopener">↗ Al Jazeera</a>
           <a class="source-link" href="https://en.wikipedia.org/wiki/2023_Kramatorsk_restaurant_missile_strike" target="_blank" rel="noopener">↗ Wikipedia</a>
-          <a class="source-link" href="https://www.aa.com.tr/en/russia-ukraine-war/death-toll-in-kramatorsk-attack-rises-to-12-after-russian-strike/2933855" target="_blank" rel="noopener">↗ AA</a>
         </div>
       </div>
     </article>
@@ -802,22 +448,15 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2023">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">22. Jul 2023</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Odesa</span>
-        </div>
+        <div class="card-meta"><span class="card-date">22. Jul 2023</span><span class="card-dot"></span><span class="card-location">Odesa</span></div>
         <h2 class="card-title">Útok na historické centrum Odesy a katedrálu Premenenia</h2>
-        <p class="card-desc">Ruské rakety zasiahli historické centrum Odesy zapísané v UNESCO, pričom vážne poškodili katedrálu Premenenia z 19. storočia. Medzi zranenými bolo štyri deti. Útok nasledoval deň po tom, čo Rusko opustilo Čiernomorskú obilnú dohodu.</p>
+        <p class="card-desc">Ruské rakety zasiahli historické centrum Odesy zapísané v UNESCO, pričom vážne poškodili katedrálu Premenenia z 19. storočia. Útok nasledoval deň po tom, čo Rusko opustilo Čiernomorskú obilnú dohodu.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">2</span><span class="casualty-label">zabitých</span></div>
           <div class="casualty-item"><span class="casualty-number injured">22+</span><span class="casualty-label">zranených (vrát. 4 detí)</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené UNESCO + Reuters</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené UNESCO + Reuters</span></div>
         <div class="source-links">
-          <a class="source-link" href="https://www.timesofisrael.com/2-killed-in-russian-barrage-on-odesa-unesco-recognized-cathedral-badly-damaged/" target="_blank" rel="noopener">↗ Times of Israel</a>
           <a class="source-link" href="https://www.bbc.com/news/world-europe-66271022" target="_blank" rel="noopener">↗ BBC</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/russias-odesa-attack-historic-cathedral-condemned-2023-07-23/" target="_blank" rel="noopener">↗ Reuters</a>
         </div>
@@ -827,23 +466,16 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2023">
       <div class="card-severity-bar extreme"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">5. Okt 2023</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Hroza, Charkovský kraj</span>
-        </div>
+        <div class="card-meta"><span class="card-date">5. Okt 2023</span><span class="card-dot"></span><span class="card-location">Hroza, Charkovský kraj</span></div>
         <h2 class="card-title">Útok na pohrebné stretnutie v Hroze</h2>
-        <p class="card-desc">Ruská riadená strela zasiahla kaviareň v dedine Hroza, kde sa konalo pohrebné posedenie po opätovnom pochovávaní miestneho muža zabitého vo vojne. Zomrelo 59 ľudí — takmer celá dospelá populácia dediny. Medzi obeťami bol aj osemročný chlapec. OHCHR útok plne zdokumentoval.</p>
+        <p class="card-desc">Ruská riadená strela zasiahla kaviareň v dedine Hroza, kde sa konalo pohrebné posedenie. Zomrelo 59 ľudí — takmer celá dospelá populácia dediny. Medzi obeťami bol aj osemročný chlapec. OHCHR útok plne zdokumentoval.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">59</span><span class="casualty-label">zabitých (všetci civilisti)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">6</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://ukraine.ohchr.org/en/attack-funeral-reception-hroza-EN" target="_blank" rel="noopener">↗ OHCHR správa</a>
-          <a class="source-link" href="https://www.ohchr.org/en/press-briefing-notes/2023/10/ukraine-report-hroza-missile-attack" target="_blank" rel="noopener">↗ OHCHR brief</a>
           <a class="source-link" href="https://www.bbc.com/news/world-europe-67015951" target="_blank" rel="noopener">↗ BBC</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/russian-missile-strike-kills-dozens-eastern-ukraine-village-cafe-2023-10-05/" target="_blank" rel="noopener">↗ Reuters</a>
         </div>
@@ -853,20 +485,14 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2023">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">2. Nov 2023</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Avdijivka / Donetsk</span>
-        </div>
+        <div class="card-meta"><span class="card-date">2. Nov 2023</span><span class="card-dot"></span><span class="card-location">Avdijivka / Donetsk</span></div>
         <h2 class="card-title">Opakované útoky na obývané štvrte Avdijivky</h2>
-        <p class="card-desc">Ruské sily systematicky ostreľovali obytné štvrte Avdijivky počas mesiacov intenzívnych bojov. OHCHR zdokumentoval opakované útiky na civilnú infraštruktúru — nemocnice, školy a obytné domy. Tisícky civilistov odmietli evakuáciu a zostali pod paľbou.</p>
+        <p class="card-desc">Ruské sily systematicky ostreľovali obytné štvrte Avdijivky. OHCHR zdokumentoval opakované útiky na civilnú infraštruktúru — nemocnice, školy a obytné domy. Tisícky civilistov odmietli evakuáciu a zostali pod paľbou.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">30+</span><span class="casualty-label">zabitých civilistov (overené)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">120+</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://ukraine.ohchr.org" target="_blank" rel="noopener">↗ OHCHR</a>
           <a class="source-link" href="https://www.bbc.com/news/world-europe-67244870" target="_blank" rel="noopener">↗ BBC</a>
@@ -879,24 +505,18 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2024">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">8. Jul 2024</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Kyjev</span>
-        </div>
-        <h2 class="card-title">Masívny raketový útok na Kyjev — zasiahnutá detská nemocnica Ohmatdyt</h2>
-        <p class="card-desc">Rusko odpálilo 40+ rakiet a dronov na ukrajinskú infraštruktúru. Jedna raketa priamo zasiahla Kyjevskú detskú nemocnicu Ohmatdyt — najväčšiu detskú nemocnicu Ukrainy. Záchranári vyťahovali deti z trosiek. Prezident Biden, lídri G7 a OSN útok odsúdili ako vojnový zločin.</p>
+        <div class="card-meta"><span class="card-date">8. Jul 2024</span><span class="card-dot"></span><span class="card-location">Kyjev</span></div>
+        <h2 class="card-title">Masívny raketový útok — zasiahnutá nemocnica Ohmatdyt</h2>
+        <p class="card-desc">Rusko odpálilo 40+ rakiet a dronov. Jedna raketa priamo zasiahla Kyjevskú detskú nemocnicu Ohmatdyt — najväčšiu detskú nemocnicu Ukrainy. Záchranári vyťahovali deti z trosiek. Prezident Biden, lídri G7 a OSN útok odsúdili ako vojnový zločin.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">41</span><span class="casualty-label">zabitých naprieč Ukrajinou</span></div>
           <div class="casualty-item"><span class="casualty-number injured">180+</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR + BBC + Reuters</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR + BBC + Reuters</span></div>
         <div class="source-links">
           <a class="source-link" href="https://www.bbc.com/news/articles/c99vml0zkqlo" target="_blank" rel="noopener">↗ BBC</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/ukraine-hospital-hit-massive-russian-attack-kills-dozens-2024-07-08/" target="_blank" rel="noopener">↗ Reuters</a>
-          <a class="source-link" href="https://www.theguardian.com/world/2024/jul/08/ukraine-russia-attack-kyiv-children-hospital" target="_blank" rel="noopener">↗ The Guardian</a>
+          <a class="source-link" href="https://www.theguardian.com/world/2024/jul/08/ukraine-russia-attack-kyiv-children-hospital" target="_blank" rel="noopener">↗ Guardian</a>
         </div>
       </div>
     </article>
@@ -904,20 +524,14 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2024">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">9. Aug 2024</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Kostiantynivka, Donetsk</span>
-        </div>
+        <div class="card-meta"><span class="card-date">9. Aug 2024</span><span class="card-dot"></span><span class="card-location">Kostiantynivka, Donetsk</span></div>
         <h2 class="card-title">Útok na supermarket v Kostiantynivke</h2>
-        <p class="card-desc">Ruská riadená bomba zasiahla preplnený supermarket v meste Kostiantynivka v Doneckom regióne. Útok sa odohral v čase najväčšej nákupnej aktivity. OHCHR útok plne zdokumentoval a označil ako jeden z najsmrteľnejších jednorazových útokov na civlistov v roku 2024.</p>
+        <p class="card-desc">Ruská riadená bomba zasiahla preplnený supermarket v meste Kostiantynivka v Doneckom regióne. Útok sa odohral v čase najväčšej nákupnej aktivity. OHCHR útok označil ako jeden z najsmrteľnejších jednorazových útokov na civilistov v roku 2024.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">14</span><span class="casualty-label">zabitých</span></div>
           <div class="casualty-item"><span class="casualty-number injured">46</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://ukraine.ohchr.org" target="_blank" rel="noopener">↗ OHCHR</a>
           <a class="source-link" href="https://www.bbc.com/news/articles/c8dl1p5p1nyo" target="_blank" rel="noopener">↗ BBC</a>
@@ -929,20 +543,14 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2024">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">10. Dec 2024</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Zaporizhzhia</span>
-        </div>
+        <div class="card-meta"><span class="card-date">10. Dec 2024</span><span class="card-dot"></span><span class="card-location">Zaporizhzhia</span></div>
         <h2 class="card-title">Útok na zdravotnícke zariadenia v Zaporizhzhii</h2>
-        <p class="card-desc">Ruský útok zasiahol dve zdravotnícke zariadenia v Zaporizhzhii — polikliniku a nemocnicu. Medzi obeťami bol zdravotnícky personál. Útok na zdravotnícku infraštruktúru je porušením Ženevských konvencií. OHCHR incident plne zdokumentoval.</p>
+        <p class="card-desc">Ruský útok zasiahol dve zdravotnícke zariadenia v Zaporizhzhii — polikliniku a nemocnicu. Medzi obeťami bol zdravotnícky personál. Útok na zdravotnícku infraštruktúru je porušením Ženevských konvencií.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">11</span><span class="casualty-label">zabitých (vrát. zdravotníkov)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">23</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://ukraine.ohchr.org/en/Ukraine-Attack-Strikes-Medical-Facilities-in-Zaporizhzhia-Kills-11-Including-Medical-Staff" target="_blank" rel="noopener">↗ OHCHR</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/russian-attack-zaporizhzhia-kills-11-including-medics-2024-12-10/" target="_blank" rel="noopener">↗ Reuters</a>
@@ -955,23 +563,16 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2025">
       <div class="card-severity-bar extreme"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">8. Jan 2025</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Zaporizhzhia</span>
-        </div>
-        <h2 class="card-title">Útok aerobombou na priemyselný komplex v Zaporizhzhii</h2>
-        <p class="card-desc">Dve ruské riadené letecké bomby zasiahli priemyselný komplex v Zaporizhzhii, kde pracovali civilní robotníci. Podľa OSN išlo o najväčší jednotlivý civilný incident od januára 2023 (útok na Dnipro). HRMMU útok zaradil medzi najsmrteľnejšie od začiatku vojny.</p>
+        <div class="card-meta"><span class="card-date">8. Jan 2025</span><span class="card-dot"></span><span class="card-location">Zaporizhzhia</span></div>
+        <h2 class="card-title">Útok aerobombou na priemyselný komplex</h2>
+        <p class="card-desc">Dve ruské riadené letecké bomby zasiahli priemyselný komplex v Zaporizhzhii, kde pracovali civilní robotníci. Podľa OSN išlo o najväčší jednotlivý civilný incident od januára 2023. HRMMU útok zaradil medzi najsmrteľnejšie od začiatku vojny.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">13</span><span class="casualty-label">zabitých (potvrdených OSN)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">110</span><span class="casualty-label">zranených</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR / HRMMU</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR / HRMMU</span></div>
         <div class="source-links">
-          <a class="source-link" href="https://ukraine.un.org/en/287090-zaporizhzhia-attack-marks-highest-civilian-casualties-two-years-glide-bombs-drive-30-rise" target="_blank" rel="noopener">↗ OSN Správa</a>
-          <a class="source-link" href="https://www.globalissues.org/news/2025/01/09/38790" target="_blank" rel="noopener">↗ Global Issues</a>
+          <a class="source-link" href="https://ukraine.un.org/en/287090-zaporizhzhia-attack-marks-highest-civilian-casualties-two-years-glide-bombs-drive-30-rise" target="_blank" rel="noopener">↗ OSN</a>
           <a class="source-link" href="https://www.reuters.com/world/europe/russian-bombs-kill-13-injure-110-zaporizhzhia-ukraine-2025-01-08/" target="_blank" rel="noopener">↗ Reuters</a>
         </div>
       </div>
@@ -980,24 +581,17 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2025">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">24. Apr 2025</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Kyjev + 8 regiónov</span>
-        </div>
+        <div class="card-meta"><span class="card-date">24. Apr 2025</span><span class="card-dot"></span><span class="card-location">Kyjev + 8 regiónov</span></div>
         <h2 class="card-title">Koordinovaný masívny útok na Kyjev a 8 regiónov</h2>
-        <p class="card-desc">Rusko odpálilo desiatky striel a loiterujúcich munícií na Kyjev a najmenej osem ďalších regiónov Ukrainy v koordinovanom nočnom útoku. Medzi zranenými bolo 12 detí. Útok zasiahol obytné budovy, infraštruktúru a verejné priestory. OHCHR útok okamžite zdokumentoval.</p>
+        <p class="card-desc">Rusko odpálilo desiatky striel a loiterujúcich munícií na Kyjev a najmenej osem ďalších regiónov Ukrainy. Medzi zranenými bolo 12 detí. Útok zasiahol obytné budovy, infraštruktúru a verejné priestory.</p>
         <div class="card-casualties">
           <div class="casualty-item"><span class="casualty-number killed">9+</span><span class="casualty-label">zabitých v Kyjeve</span></div>
           <div class="casualty-item"><span class="casualty-number injured">90+</span><span class="casualty-label">zranených (vrát. 12 detí)</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR</span></div>
         <div class="source-links">
           <a class="source-link" href="https://ukraine.ohchr.org/en/Sustained-large-scale-attacks-by-Russian-armed-forces-kill-and-injure-civilians-across-Ukraine-in-A" target="_blank" rel="noopener">↗ OHCHR</a>
           <a class="source-link" href="https://ukraine.un.org/en/293224-sustained-large-scale-attacks-russian-armed-forces-kill-and-injure-civilians-across-ukraine" target="_blank" rel="noopener">↗ OSN</a>
-          <a class="source-link" href="https://www.bbc.com/news/articles/c0r0p5p5p5po" target="_blank" rel="noopener">↗ BBC</a>
         </div>
       </div>
     </article>
@@ -1005,23 +599,72 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
     <article class="attack-card" data-year="2025">
       <div class="card-severity-bar high"></div>
       <div class="card-body">
-        <div class="card-meta">
-          <span class="card-date">Jun 2025</span>
-          <span class="card-dot"></span>
-          <span class="card-location">Sumy</span>
-        </div>
-        <h2 class="card-title">Útok na mesto Sumy — zasiahnuté civilné oblasti</h2>
-        <p class="card-desc">Ruské útoky na Sumy v Sumskom regióne zasiahli civilné štvrte. Podľa OHCHR rok 2025 prekonal všetky predchádzajúce roky (okrem 2022) v počte civilných obetí. Mesiac júl 2025 bol s 286 zabitými civilistami najsmrteľnejší od mája 2022 — HRMMU to zaznamenalo ako trojročný mesačný rekord.</p>
+        <div class="card-meta"><span class="card-date">Júl 2025</span><span class="card-dot"></span><span class="card-location">Viacero regiónov</span></div>
+        <h2 class="card-title">Najsmrteľnejší mesiac pre civilistov od mája 2022</h2>
+        <p class="card-desc">Podľa HRMMU bol júl 2025 s 286 zabitými civilistami trojročným mesačným rekordom. Rok 2025 bol celkovo najsmrteľnejší od roku 2022 — 2 514 zabitých a 12 142 zranených. Útoky zasiahli okrem iného Sumy, Charkov a Záporožský región.</p>
         <div class="card-casualties">
-          <div class="casualty-item"><span class="casualty-number killed">286</span><span class="casualty-label">zabitých v júli 2025 (celý mesiac)</span></div>
+          <div class="casualty-item"><span class="casualty-number killed">286</span><span class="casualty-label">zabitých — júl 2025 (mesačný rekord)</span></div>
           <div class="casualty-item"><span class="casualty-number injured">1 388</span><span class="casualty-label">zranených v júli 2025</span></div>
         </div>
-        <div class="card-footer">
-          <span class="verify-badge confirmed">✓ Overené OHCHR / HRMMU</span>
-        </div>
+        <div class="card-footer"><span class="verify-badge confirmed">Overené OHCHR / HRMMU</span></div>
         <div class="source-links">
           <a class="source-link" href="https://ukraine.un.org/en/299761-number-civilians-killed-and-injured-ukraine-reaches-three-year-monthly-high-july-2025-un" target="_blank" rel="noopener">↗ OSN aug. 2025</a>
           <a class="source-link" href="https://ukraine.ohchr.org/en/2025-deadliest-year-for-civilians-in-Ukraine-since-2022-UN-human-rights-monitors-find" target="_blank" rel="noopener">↗ OHCHR ročná správa</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===== 3 NOVÉ UDALOSTI S VAROVNÝM ŠTÍTKOM ===== -->
+
+    <article class="attack-card" data-year="2025">
+      <div class="card-severity-bar high"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 2025</span><span class="card-dot"></span><span class="card-location">Sumy</span></div>
+        <h2 class="card-title">Séria útokov na mesto Sumy — jar 2025</h2>
+        <p class="card-desc">Opakované ruské raketové a dronové útoky na mesto Sumy v prvom štvrťroku 2025 zasiahli obytné oblasti a energetickú infraštruktúru. Čísla obetí sa v jednotlivých zdrojoch líšia — ukrajinskí predstavitelia a medzinárodné organizácie uvádzajú rozdielne hodnoty.</p>
+        <div class="card-casualties">
+          <div class="casualty-item"><span class="casualty-number killed">~20+</span><span class="casualty-label">zabitých (odhad)</span></div>
+          <div class="casualty-item"><span class="casualty-number injured">~80+</span><span class="casualty-label">zranených (odhad)</span></div>
+        </div>
+        <div class="card-footer"><span class="verify-badge partial">Čísla sa líšia medzi zdrojmi</span></div>
+        <div class="source-links">
+          <a class="source-link" href="https://ukraine.ohchr.org" target="_blank" rel="noopener">↗ OHCHR</a>
+          <a class="source-link" href="https://www.reuters.com/world/europe/" target="_blank" rel="noopener">↗ Reuters</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="attack-card" data-year="2025">
+      <div class="card-severity-bar high"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Máj — Jún 2025</span><span class="card-dot"></span><span class="card-location">Charkov</span></div>
+        <h2 class="card-title">Vlna dronových útokov na Charkov</h2>
+        <p class="card-desc">Intenzívna vlna ruských dronových útokov Shahed na Charkov zasiahla obytné štvrte, trhy a infraštruktúru. Presné čísla obetí zostávajú neúplné — ukrajinskí záchranári potvrdili desiatky prípadov, avšak celkový rozsah škôd nebol nezávisle overený.</p>
+        <div class="card-casualties">
+          <div class="casualty-item"><span class="casualty-number killed">~35+</span><span class="casualty-label">zabitých (čiastočne potvrdených)</span></div>
+          <div class="casualty-item"><span class="casualty-number injured">~150+</span><span class="casualty-label">zranených (odhad)</span></div>
+        </div>
+        <div class="card-footer"><span class="verify-badge partial">Čísla nie sú presne potvrdené</span></div>
+        <div class="source-links">
+          <a class="source-link" href="https://www.bbc.com/news/world/europe" target="_blank" rel="noopener">↗ BBC</a>
+          <a class="source-link" href="https://ukraine.ohchr.org" target="_blank" rel="noopener">↗ OHCHR</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="attack-card" data-year="2026">
+      <div class="card-severity-bar high"></div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Jar 2026</span><span class="card-dot"></span><span class="card-location">Viacero regiónov</span></div>
+        <h2 class="card-title">Pokračujúce útoky na civilnú infraštruktúru — 2026</h2>
+        <p class="card-desc">Ruské útoky na energetickú a civilnú infraštruktúru pokračujú v roku 2026. Presné a úplné čísla obetí za prvé mesiace roku 2026 ešte neboli kompletne spracované a overené OHCHR. Údaje sú predbežné a môžu sa meniť.</p>
+        <div class="card-casualties">
+          <div class="casualty-item"><span class="casualty-number killed">—</span><span class="casualty-label">prebieha dokumentácia</span></div>
+          <div class="casualty-item"><span class="casualty-number injured">—</span><span class="casualty-label">prebieha dokumentácia</span></div>
+        </div>
+        <div class="card-footer"><span class="verify-badge partial">Predbežné — dokumentácia prebieha</span></div>
+        <div class="source-links">
+          <a class="source-link" href="https://ukraine.ohchr.org" target="_blank" rel="noopener">↗ OHCHR</a>
           <a class="source-link" href="https://www.aljazeera.com/news/2026/1/12/civilian-casualties-in-ukraine-up-sharply-in-2025-un-monitor-says" target="_blank" rel="noopener">↗ Al Jazeera</a>
         </div>
       </div>
@@ -1030,14 +673,13 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
   </div>
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="site-footer">
     <div class="footer-inner">
       <div class="footer-note">
         <p>Všetky záznamy v tejto databáze vychádzajú z overených zdrojov — predovšetkým z dokumentácie OSN (OHCHR/HRMMU), medzinárodných médií s overenými redakciami a správ mimovládnych organizácií ako Human Rights Watch a Amnesty International.</p>
         <br>
-        <p>Skutočný počet obetí je pravdepodobne výrazne vyšší. Mnohé obete v oblastiach pod ruskou kontrolou sú nedostupné pre nezávislé overenie. Databáza je priebežne aktualizovaná.</p>
+        <p>Skutočný počet obetí je pravdepodobne výrazne vyšší. Mnohé obete v oblastiach pod ruskou kontrolou sú nedostupné pre nezávislé overenie. Záznamy označené žltým ⚠ obsahujú čísla, ktoré sa líšili medzi zdrojmi alebo neboli plne nezávisle overené.</p>
       </div>
       <div class="footer-sources">
         <h4>Primárne zdroje</h4>
@@ -1052,53 +694,44 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
         </ul>
       </div>
     </div>
-    <div class="footer-copy">
-      Databáza civilných obetí · Dáta overené podľa OHCHR, Reuters, BBC, AP · Aktualizované jún 2026
-    </div>
+    <div class="footer-copy">Databáza civilných obetí · Dáta overené podľa OHCHR, Reuters, BBC, AP · Aktualizované jún 2026</div>
   </div>
 </footer>
 
 <script>
 (function(){
-  // Theme toggle
   const toggle = document.querySelector('[data-theme-toggle]');
   const html = document.documentElement;
   let theme = 'dark';
   html.setAttribute('data-theme', theme);
-  if(toggle) {
-    toggle.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-    toggle.addEventListener('click', function(){
-      theme = theme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', theme);
-      toggle.innerHTML = theme === 'dark'
-        ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
-        : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  if(toggle){
+    toggle.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    toggle.addEventListener('click',function(){
+      theme=theme==='dark'?'light':'dark';
+      html.setAttribute('data-theme',theme);
+      toggle.innerHTML=theme==='dark'
+        ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+        :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
     });
   }
-
-  // Count cards
-  const cards = document.querySelectorAll('.attack-card');
-  const totalEl = document.getElementById('total-count');
-  const heroEl = document.getElementById('total-events-hero');
-  if(totalEl) totalEl.textContent = cards.length;
-  if(heroEl) heroEl.textContent = cards.length;
-
-  // Filter
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const resultCount = document.getElementById('result-count');
-
-  function updateCount() {
-    const visible = document.querySelectorAll('.attack-card:not(.hidden)').length;
-    if(resultCount) resultCount.textContent = visible + ' záznam' + (visible === 1 ? '' : visible < 5 ? 'y' : 'ov');
+  const cards=document.querySelectorAll('.attack-card');
+  const totalEl=document.getElementById('total-count');
+  const heroEl=document.getElementById('total-events-hero');
+  if(totalEl)totalEl.textContent=cards.length;
+  if(heroEl)heroEl.textContent=cards.length;
+  const filterBtns=document.querySelectorAll('.filter-btn');
+  const resultCount=document.getElementById('result-count');
+  function updateCount(){
+    const visible=document.querySelectorAll('.attack-card:not(.hidden)').length;
+    if(resultCount)resultCount.textContent=visible+' záznam'+(visible===1?'':visible<5?'y':'ov');
   }
-
   filterBtns.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      filterBtns.forEach(function(b){ b.classList.remove('active'); });
+    btn.addEventListener('click',function(){
+      filterBtns.forEach(function(b){b.classList.remove('active');});
       btn.classList.add('active');
-      const year = btn.getAttribute('data-year');
+      const year=btn.getAttribute('data-year');
       cards.forEach(function(card){
-        if(year === 'all' || card.getAttribute('data-year') === year){
+        if(year==='all'||card.getAttribute('data-year')===year){
           card.classList.remove('hidden');
         } else {
           card.classList.add('hidden');
@@ -1107,7 +740,6 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.2; }
       updateCount();
     });
   });
-
   updateCount();
 })();
 </script>
