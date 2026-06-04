@@ -1,0 +1,44 @@
+#	Dátum	Názov	Stručný popis	Zabití	Deti	Zranení	Overenie	Zdroje overenia
+1	február–máj 2022	Mariupol — obliehanie a zničenie mesta	Agregovaný záznam o systematickom bombardovaní Mariupolu a civilných obetiach počas obliehania.	12500+	?	?	Žltá	AP, Reuters, OHCHR, HRW
+2	február–marec 2022	Bucha — masaker	Súhrnný záznam o civilných obetiach po ruskej okupácii Buče.	458	?	?	Žltá	Reuters, AP, UN, EEAS
+3	1. marec 2022	Charkov — oblastná správa	Útok zasiahol budovu oblastnej správy a civilné okolie v centre mesta.	29	29	?	Zelená	Reuters, OHCHR
+4	3. marec 2022	Černihiv — bombardovanie obytných štvrtí	Bombardovanie obytných štvrtí spôsobilo vysoké civilné straty.	47	47	?	Zelená	Amnesty, OHCHR
+5	9. marec 2022	Mariupol — pôrodnica	Útok na pôrodnicu v Mariupole, jedna z najznámejších udalostí začiatku invázie.	3	3	1	Zelená	AP, Reuters
+6	9. marec 2022	Izjum — obytný dom Pervomajska	Zásah obytného domu s desiatkami civilných obetí.	44	44+	?	Zelená	AP, HRW
+7	marec 2022	Borodjanka — panelové domy	Pod troskami obytných blokov boli nájdené desiatky tiel, celkový počet presiahol 130.	130+	?	?	Žltá	BBC, UN
+8	16. marec 2022	Mariupol — divadlo	Bombardovanie divadla, kde sa ukrývali civilisti; analýza uvádza 300+.	300+	?	?	Žltá	AP, Amnesty, OSN
+9	16. marec 2022	Černihiv — rad civilistov pred obchodom	Útok na civilistov čakajúcich na chlieb pred obchodom.	13	0	?	Zelená	HRW, OHCHR
+10	29. marec 2022	Mykolajiv — vojenská správa	Útok na budovu regionálnej správy s množstvom obetí vnútri.	37	0	?	Zelená	Reuters, OHCHR
+11	8. apríl 2022	Kramatorsk — železničná stanica	Raketa zasiahla stanicu plnú civilistov evakuujúcich sa z Donbasu.	59	?	?	Zelená	Reuters, AP
+12	23. apríl 2022	Odesa — komplex Tiras	Zásah obytného komplexu v Odese, medzi obeťami aj dieťa Kira.	8	1	?	Zelená	BBC, Reuters
+13	27. jún 2022	Kremenčuk — OC Amstor	Útok na obchodné centrum počas prevádzky; analýza uvádza rozsah 20–22 obetí.	20–22	0	?	Žltá	BBC, Amnesty
+14	1. júl 2022	Serhijivka — útok Kh-22	Raketa zasiahla rekreačné a obytné objekty pri Odese.	21	1	?	Zelená	Reuters, OHCHR
+15	9. júl 2022	Časiv Jar — panelák	Zrútenie bytového domu po útoku s desiatkami obetí.	48	0	?	Zelená	AP, Reuters
+16	14. júl 2022	Vinnycia — útok v centre mesta	Útok na centrum Vinnycie, znám y aj pre smrť malej Lizy.	27	3	?	Zelená	Reuters, AP
+17	24. august 2022	Čaplyne — železnica	Útok na železničnú infraštruktúru a okolie zabil desiatky ľudí.	25	2	?	Zelená	Reuters, UN
+18	9. september 2022 / 30. september 2022	Zaporizhzhia — civilný konvoj / humanitárna kolóna	Analýza upozorňuje na rozdielny dátum aj počet obetí medzi stránkou a verifikovaným zoznamom.	30 / 32	?	?	Žltá	Reuters, AP, potreba primárneho overenia
+19	14. január 2023	Dnipro — panelák	Zásah obytného domu; analýza upozorňuje na rozdiel 45 vs. 46 obetí a sporný počet detí.	45–46	2–6	?	Žltá	Le Monde, Reuters, AP
+20	28. apríl 2023	Umaň — panelový dom	Útok na obytný dom s potvrdenými detskými obeťami.	23	6	?	Zelená	BBC, OHCHR
+21	27. jún 2023	Kramatorsk — pizzeria Ria	Útok na reštauráciu/pizzeriu v centre Kramatorska.	13	?	?	Zelená	Reuters, AP
+22	22. júl 2023	Odesa — katedrála Premenenia	Zásah UNESCO objektu a civilného centra Odesy.	2	0	?	Zelená	Reuters, UNESCO
+23	2023	Avdijivka — opakované útoky	Agregovaný záznam opakovaných útokov na civilistov v Avdijivke.	?	?	?	Žltá	Reuters, OHCHR
+24	29. december 2023	Masívny útok naprieč Ukrajinou	Koordinovaná vlna útokov vo viacerých mestách s vysokým počtom obetí.	58	?	?	Zelená	AP, UN
+25	5. október 2023	Hroza — pietne zhromaždenie	Útok na obec Hroza; analýza uvádza spor o vek dieťaťa a rozsah 52–59, stránka uvádza 59.	52–59	1	?	Žltá	Reuters, AP, OHCHR
+26	15. marec 2024	Odesa — dvojitý Iskander-M	Dvojitý balistický úder zasiahol aj záchranné zložky.	21	0	?	Zelená	Reuters, HRMMU
+27	29. apríl 2024	Odesa — park Junosť	Útok na civilnú rekreačnú zónu, medzi obeťami aj Zlata Noviková.	8	?	?	Zelená	Reuters, BBC
+28	23. máj 2024	Charkov — tlačiareň Faktor-Druk	Útok zasiahol tlačiareň a civilnú infraštruktúru kultúrnej produkcie.	7	0	?	Zelená	Reuters, RSF
+29	25. máj 2024	Charkov — hypermarket Epicentr	Bombardovanie hypermarketu počas dennej prevádzky.	19	0	?	Zelená	AP, BBC
+30	8. júl 2024	Kyjev — Ohmatdyt a celoukrajinské útoky	Analýza uvádza 41 mŕtvych celkovo naprieč Ukrajinou, vrátane zásahu detskej nemocnice Ohmatdyt.	41	?	?	Žltá	Reuters, OHCHR
+31	9. august 2024	Kostiantynivka — supermarket	Útok na supermarket s civilnými obeťami.	14	0	?	Zelená	Reuters, AP
+32	10. december 2024	Zaporizhzhia — zdravotnícke zariadenia	Útok na zdravotnícke zariadenia v Záporoží.	11	0	?	Zelená	Reuters, AP
+33	8. január 2025	Zaporizhzhia — aerobomba	Útok v Záporoží, analýza uvádza 13 mŕtvych a 110 zranených.	13	?	110	Zelená	Reuters, AP
+34	24. apríl 2025	Kyjev — veľký útok na mesto	Udalosť je v analýze uvedená ako zhoda medzi stránkou a zoznamom.	?	?	?	Zelená	Reuters, AP
+35	4. apríl 2025	Kryvyj Rih — park a ihrisko	Útok na verejný priestor a ihrisko, medzi obeťami deväť detí.	20	9	?	Zelená	HRMMU, AP
+36	13. apríl 2025	Sumy — Kvetná nedeľa	Útok počas sviatočného dňa s vysokým počtom civilných obetí.	35	2	?	Zelená	Reuters, UN
+37	jar 2025	Sumy — jarné útoky	Agregovaný, čiastočne overený záznam; analýza uvádza približne 20+ obetí.	20+	?	?	Žltá	Reuters, OHCHR
+38	máj–jún 2025	Charkov — útoky dronmi Shahed	Agregovaný, čiastočne overený záznam o sérii útokov v Charkove.	35+	?	?	Žltá	Reuters, OHCHR
+39	júl 2025	Júl 2025 — mesačný rekord	Štatistický/agregovaný záznam o rekordnom počte civilných obetí v danom mesiaci.	286	?	?	Žltá	OHCHR, UN
+40	17. jún 2025	Kyjev — Solomjanskyj rajón	Kombinovaný útok poškodil obytné domy v Kyjeve.	30	0	?	Zelená	Reuters, BBC
+41	24. jún 2025	Dnipro — domy, školy a vlak	Útok zasiahol civilnú infraštruktúru vrátane vlaku.	21	0	?	Zelená	Reuters, AP
+41	19. november 2025	Ternopil — Ch-101	Útok strelou Ch-101 s vysokým počtom obetí vrátane detí.	38	8	?	Zelená	Reuters, UN
+42	14. máj 2026	Kyjev — Darnyckyj rajón	Konkrétny útok odporúčaný v analýze ako náhrada za generický záznam 2026.	24	3	?	Zelená	Reuters, HRMMU
